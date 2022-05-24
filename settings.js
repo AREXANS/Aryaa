@@ -8,7 +8,7 @@ global.APIs = {
 
 // Free apikey
 global.APIKeys = {
-	'https://api.zeeoneofc.xyz' : '6cgLO3pJ', // login https://api.zeeoneofc.xyz to get apikey || https://api-alphabot.herokuapp.com
+	'https://api.zeeoneofc.xyz' : '8BNUgTSi', // login https://api.zeeoneofc.xyz to get apikey || https://api-alphabot.herokuapp.com
 }
 
 global.self_mode = false
@@ -24,7 +24,9 @@ global.language = "ind"
 global.ownerNumberr = "6289518030035"
 global.ownerbot = ['6289518030035@s.whatsapp.net','48729756955@s.whatsapp.net'] // .owner
 global.ownername = "Aryaa ×፝֟͜×"
-global.botname = "Aryaa"
+global.botname = "Aryaa ×፝֟͜×"
+global.packname = "Created By"
+global.author = "Aryaa ×፝֟͜×"
 global.thumb = "thumbnail_1.jpg"
 global.thumbnail ="thumbnail_2_1.jpg"
 global.fakethumb ="thumbnail_1.jpg"
