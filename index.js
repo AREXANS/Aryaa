@@ -4816,7 +4816,7 @@ case 'tahta':
                     if (args.length < 1) return reply(lang.noteks(prefix, command))
                     ttp = args.join(' ')
                     anu1 = await getBuffer(`https://api.xteam.xyz/ttp?file&text=${ttp}`)
-                    alpha.sendMessage(from, anu1, sticker, {quoted: mek})
+                    alpha.sendMessage(from, anu1, image, {quoted: fgclink})
 					.catch(e =>{
 					reply('Sepertinya server xteam.xyz sedang eror / perbaikan')})
 					 await limitAdd(sender, limit)
