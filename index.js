@@ -2228,8 +2228,6 @@ let papako = [{
                 }
 break
 	case 'menu': case 'help':{
-koko = `${targetpc}@s.whatsapp.net`
-let content = fs.readFileSync(`image/thumbnail_1.jpg`)
 const media = await alpha.prepareMessage(from, content, MessageType.image, { thumbnail:fs.readFileSync(`image/thumbnail_1.jpg`)})
 let bacotlu = media.message["ephemeralMessage"] ? media.message.ephemeralMessage : media
 let p1 = await alpha.getStatus(sender)
