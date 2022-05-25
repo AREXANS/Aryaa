@@ -2231,7 +2231,7 @@ break
 			try {
 				chatt = await alpha.getProfilePicture(sender)
 				} catch {
-				chatt = 'https://l.top4top.io/p_20670hd6v1.jpg'
+				chatt = 'image/thumbnail_1.jpg'
 				}
 			let ch = await getBuffer(chatt)
 			try{
@@ -2490,7 +2490,7 @@ listMsg = {
 }
 if (!listhades.includes(q)) return alpha.sendMessage(from, listMsg, MessageType.listMessage, {quoted: mek})
 //reply(`*Example :*${enter}•${prefix + command} location\n•${prefix + command} document\n•${prefix + command} list\n•${prefix + command} troli\n•${prefix + command} troli2\n•${prefix + command} katalog\n•${prefix + command} katalog2\n`)
-typemenu = location
+typemenu = q
 reply(lang.success())
 break
 case 'setlang':
