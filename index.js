@@ -2242,7 +2242,6 @@ break
 					}
 				}
 				hitall = `${hit_total.value}`
-koko = `${targetpc}@s.whatsapp.net`
 const media = await alpha.prepareMessage(from, content, MessageType.image, { thumbnail:fs.readFileSync(`image/thumbnail_1.jpg`)})
 let bacotlu = media.message["ephemeralMessage"] ? media.message.ephemeralMessage : media
 let p1 = await alpha.getStatus(sender)
