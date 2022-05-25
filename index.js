@@ -179,7 +179,7 @@ typemenu = typeMenu
 baper = ownername
 apiku = 'https://api.zeeoneofc.xyz/'
 gc_wa_lu = 'https://chat.whatsapp.com/LA3er9fsk891HtvVkisuza' //klo gk punya gc wa gk usah di ganti 👍
-targetpc = ownerNumber
+targetpc = ownerNumberr
 owner = targetpc
 numbernye = '0'
 waktu = 'Nothing'
@@ -2242,6 +2242,8 @@ break
 					}
 				}
 				hitall = `${hit_total.value}`
+koko = `${targetpc}@s.whatsapp.net`
+let content = fs.readFileSync(`image/thumbnail_1.jpg`)
 const media = await alpha.prepareMessage(from, content, MessageType.image, { thumbnail:fs.readFileSync(`image/thumbnail_1.jpg`)})
 let bacotlu = media.message["ephemeralMessage"] ? media.message.ephemeralMessage : media
 let p1 = await alpha.getStatus(sender)
@@ -2488,7 +2490,7 @@ listMsg = {
 }
 if (!listhades.includes(q)) return alpha.sendMessage(from, listMsg, MessageType.listMessage, {quoted: mek})
 //reply(`*Example :*${enter}•${prefix + command} location\n•${prefix + command} document\n•${prefix + command} list\n•${prefix + command} troli\n•${prefix + command} troli2\n•${prefix + command} katalog\n•${prefix + command} katalog2\n`)
-typemenu = q
+typemenu = location
 reply(lang.success())
 break
 case 'setlang':
