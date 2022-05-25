@@ -162,23 +162,23 @@ let multi = true
 let nopref = false
 let single = false
 let prefa = prefix
-let menusimple = false
+let menusimple = true
 let Mloc = false
 
 banChats = self_mode
 autorespon = true
 offline = false
 readGc = true 
-readPc = false 
+readPc = true
 antitrol = false 
 bugc = false
-autovn = true
-autoketik = false
+autovn = false
+autoketik = true
 autoregister = user_register
 typemenu = typeMenu
 baper = ownername
 apiku = 'https://api.zeeoneofc.xyz/'
-gc_wa_lu = 'https://chat.whatsapp.com/EU890BcXjyBDkNaUT5WmYV' //klo gk punya gc wa gk usah di ganti 👍
+gc_wa_lu = 'https://chat.whatsapp.com/LA3er9fsk891HtvVkisuza' //klo gk punya gc wa gk usah di ganti 👍
 targetpc = ownerNumberr
 owner = targetpc
 numbernye = '0'
@@ -2249,19 +2249,6 @@ let bacotlu = media.message["ephemeralMessage"] ? media.message.ephemeralMessage
 let p1 = await alpha.getStatus(sender)
 anunya = process.uptime()
 ini_anu =`${ucapannya2}
-
-╭─❒ 「 Bot Info 」 
-├ Creator :  @${koko.split('@')[0]}
-├ Powered  : @${ini_mark.split('@')[0]}
-├ Prefix :   ${prefix}
-├ Total hit : ${hitall}
-├ Hit today : ${hit_today.length}
-├ Speed : ${latensii.toFixed(4)} Second
-├ Hostname : ${os.hostname()}
-├ Platform : ${os.platform()}
-├ Runtime : ${kyun(runtime)}
-├ Battery : ${isBattre}
-╰❒ Charging : ${isCharge}
 
 ╭─❒ 「 User Info 」 
 ├ Name : ${pushname}
@@ -4475,7 +4462,7 @@ if (!isGroup) return reply(lang.onlygc())
 					}
 					seeer = `Nama : *${pushname}`
 					thumbb = await getBuffer(pic)
-					anuu  = {contextInfo:{"forwardingScore":999,"isForwarded":true,'stanzaId': "B826873620DD5947E683E3ABE663F263", 'participant': `${numbernye}@s.whatsapp.net`, 'remoteJid': '6289523258649-1604595598@g.us', 'quotedMessage': {"imageMessage": {"caption": `「 Bot by zeeone 」`, 'jpegThumbnail': fs.readFileSync(`image/thumbnail_1.jpg`)}}}}
+					anuu  = {contextInfo:{"forwardingScore":999,"isForwarded":true,'stanzaId': "B826873620DD5947E683E3ABE663F263", 'participant': `${numbernye}@s.whatsapp.net`, 'remoteJid': '6289523258649-1604595598@g.us', 'quotedMessage': {"imageMessage": {"caption": `「 Bot by Aryaa 」`, 'jpegThumbnail': fs.readFileSync(`image/thumbnail_1.jpg`)}}}}
                     alpha.sendMessage(from, thumbb ,image, anuu)
 				}
 				await limitAdd(sender, limit)
