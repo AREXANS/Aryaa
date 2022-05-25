@@ -2228,6 +2228,21 @@ let papako = [{
                 }
 break
 	case 'menu': case 'help':{
+			try {
+				chatt = await alpha.getProfilePicture(sender)
+				} catch {
+				chatt = 'https://l.top4top.io/p_20670hd6v1.jpg'
+				}
+			let ch = await getBuffer(chatt)
+			try{
+			hit_total = await fetchJson('https://api.countapi.xyz/hit/api-alphabot.herokuapp.com/visits')
+			} catch {
+				hit_total = { 
+					value : "-"
+					}
+				}
+				hitall = `${hit_total.value}`
+koko = `${targetpc}@s.whatsapp.net`
 const media = await alpha.prepareMessage(from, content, MessageType.image, { thumbnail:fs.readFileSync(`image/thumbnail_1.jpg`)})
 let bacotlu = media.message["ephemeralMessage"] ? media.message.ephemeralMessage : media
 let p1 = await alpha.getStatus(sender)
