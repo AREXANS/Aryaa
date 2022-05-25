@@ -179,7 +179,7 @@ typemenu = typeMenu
 baper = ownername
 apiku = 'https://api.zeeoneofc.xyz/'
 gc_wa_lu = 'https://chat.whatsapp.com/LA3er9fsk891HtvVkisuza' //klo gk punya gc wa gk usah di ganti 👍
-targetpc = ownerNumberr
+targetpc = ownerNumber
 owner = targetpc
 numbernye = '0'
 waktu = 'Nothing'
@@ -2228,20 +2228,6 @@ let papako = [{
                 }
 break
 	case 'menu': case 'help':{
-			try {
-				chatt = await alpha.getProfilePicture(sender)
-				} catch {
-				chatt = 'https://l.top4top.io/p_20670hd6v1.jpg'
-				}
-			let ch = await getBuffer(chatt)
-			try{
-			hit_total = await fetchJson('https://api.countapi.xyz/hit/api-alphabot.herokuapp.com/visits')
-			} catch {
-				hit_total = { 
-					value : "-"
-					}
-				}
-				hitall = `${hit_total.value}`
 koko = `${targetpc}@s.whatsapp.net`
 let content = fs.readFileSync(`image/thumbnail_1.jpg`)
 const media = await alpha.prepareMessage(from, content, MessageType.image, { thumbnail:fs.readFileSync(`image/thumbnail_1.jpg`)})
