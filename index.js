@@ -149,8 +149,8 @@ const exif = new Exif()
 zeksApikey = 'Alphabott' //ganti pake apikey lu biar limitnya gk cepet abis 
 ApiZeks = 'https://api.zeks.me' // regis disini klo mau dapat apikeynya
 thumbnail = thumb
-pp_bot = fs.readFileSync(`image/${thumbnail}`)
-pp_bot2 = fs.readFileSync(`image/${thumbnail}`)
+pp_bot = fs.readFileSync(`image/thumbnail_1.jpg`)
+pp_bot2 = fs.readFileSync(`image/thumbnail_1.jpg`)
 hit_today = []
 blocked = []
 ban = []
@@ -1305,7 +1305,7 @@ if (autobio === false) return
                             "fileEncSha256": "sR9D2RS5JSifw49HeBADguI23fWDz1aZu4faWG/CyRY=",
                             "directPath": "/v/t62.7118-24/21427642_840952686474581_572788076332761430_n.enc?oh=3f57c1ba2fcab95f2c0bb475d72720ba&oe=602F3D69",
                             "mediaKeyTimestamp": "1610993486",
-                            "jpegThumbnail": fs.readFileSync(`image/${thumbnail}`),
+                            "jpegThumbnail": fs.readFileSync(`image/thumbnail_1.jpg`),
                             "scansSidecar": "1W0XhfaAcDwc7xh1R8lca6Qg/1bB4naFCSngM2LKO2NoP5RI7K+zLw=="
                         }
                     }
@@ -1313,7 +1313,7 @@ if (autobio === false) return
             })
         }
         const fakethumb = (teks, yes) => {
-            alpha.sendMessage(from, teks, image, {thumbnail:fs.readFileSync(`./image/${thumbnail}`),quoted:mek,caption:yes})
+            alpha.sendMessage(from, teks, image, {thumbnail:fs.readFileSync(`./image/thumbnail_1.jpg`),quoted:mek,caption:yes})
         }
         const fakegroup = (teks) => {
             alpha.sendMessage(from, teks, text, {
@@ -1335,7 +1335,7 @@ if (autobio === false) return
                             "fileEncSha256": "sR9D2RS5JSifw49HeBADguI23fWDz1aZu4faWG/CyRY=",
                             "directPath": "/v/t62.7118-24/21427642_840952686474581_572788076332761430_n.enc?oh=3f57c1ba2fcab95f2c0bb475d72720ba&oe=602F3D69",
                             "mediaKeyTimestamp": "1610993486",
-                            "jpegThumbnail": fs.readFileSync(`./image/${thumbnail}`),
+                            "jpegThumbnail": fs.readFileSync(`./image/thumbnail_1.jpg`),
                             "scansSidecar": "1W0XhfaAcDwc7xh1R8lca6Qg/1bB4naFCSngM2LKO2NoP5RI7K+zLw=="
                         }
                     }
@@ -1352,7 +1352,7 @@ key: {
 				"product": {
 					"productImage":{
 						"mimetype": "image/jpeg",
-						"jpegThumbnail": fs.readFileSync(`image/${thumbnail}`) //Gambarnye
+						"jpegThumbnail": fs.readFileSync(`image/thumbnail_1.jpg`) //Gambarnye
 					},
 					"title": 'Whatsapp bot', 
 					"description": "SELF BOT", 
@@ -1381,15 +1381,15 @@ const bugtrol = {
 						"sellerJid": "6289518030035@s.whatsapp.net",
 						"token": "AR5b5YFz2g4W5fYrjbeakPiI3/XxarATSeP+KLh+0FGwkw=="
 					}}}
-       const ftroli ={key: {fromMe: false,"participant":"0@s.whatsapp.net",   "remoteJid": "6289523258649-1604595598@g.us"  }, "message": {orderMessage: {itemCount: 2021,status: 200, thumbnail: fs.readFileSync(`image/${thumbnail}`), surface: 200, message: `Whatsapp Bot 〽️\nBy ${ownername}`, orderTitle: 'Aryaa ×፝֟͜×', sellerJid: '0@s.whatsapp.net'}},contextInfo: {"forwardingScore":999,"isForwarded":true},sendEphemeral: true}
-        const fdoc = {key : {participant : '0@s.whatsapp.net'},message: {documentMessage: {title: `${creator}`,jpegThumbnail: fs.readFileSync(`image/${thumbnail}`)}}}
+       const ftroli ={key: {fromMe: false,"participant":"0@s.whatsapp.net",   "remoteJid": "6289523258649-1604595598@g.us"  }, "message": {orderMessage: {itemCount: 2021,status: 200, thumbnail: fs.readFileSync(`image/thumbnail_1.jpg`), surface: 200, message: `Aryaa-Bot ×፝֟͜×`, orderTitle: 'Arexans ×፝֟͜×', sellerJid: '0@s.whatsapp.net'}},contextInfo: {"forwardingScore":999,"isForwarded":true},sendEphemeral: true}
+        const fdoc = {key : {participant : '0@s.whatsapp.net'},message: {documentMessage: {title: `${creator}`,jpegThumbnail: fs.readFileSync(`image/thumbnail_1.jpg`)}}}
         const fvn = {key: {participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: "6289643739077-1613049930@g.us" } : {})},message: { "audioMessage": {"mimetype":"audio/ogg; codecs=opus","seconds":99999,"ptt": "true"}} } 
-        const fgif = {key: {participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: "6289643739077-1613049930@g.us" } : {})},message: {"videoMessage": { "title":`${creator}`, "h": `Hmm`,'seconds': '99999', 'gifPlayback': 'true', 'caption': `Whatsapp Bot 〽️\nBy ${ownername}`, 'jpegThumbnail': fs.readFileSync(`image/${thumbnail}`)}}}
-		const fgclink = {key: {participant: "0@s.whatsapp.net","remoteJid": "0@s.whatsapp.net"},"message": {"groupInviteMessage": {"groupJid": "6288213840883-1616169743@g.us","inviteCode": "m","groupName": "P", "caption": `さ ${pushname} さ\nᴄᴍᴅ ᴇxᴇᴄ : ${command}`, 'jpegThumbnail': fs.readFileSync(`image/${thumbnail}`)}}}
-		const fgclink2 = {key: {participant: "0@s.whatsapp.net","remoteJid": "0@s.whatsapp.net"},"message": {"groupInviteMessage": {"groupJid": "6288213840883-1616169743@g.us","inviteCode": "m","groupName": "P", "caption": `${fake}`, 'jpegThumbnail': fs.readFileSync(`image/${thumbnail}`)}}}
-		const fvideo = {key: { fromMe: false,participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: "6289643739077-1613049930@g.us" } : {}) },message: { "videoMessage": { "title":`${creator}`, "h": `Hmm`,'seconds': '99999', 'caption': `${creator}`, 'jpegThumbnail': fs.readFileSync(`image/${thumbnail}`)}}}
-		const floc = {contextInfo: {"forwardingScore":999,"isForwarded":true,'stanzaId': msgId, 'participant':`${numbernye}@s.whatsapp.net`, 'remoteJid': '6283136505591-1614953337@g.us', 'quotedMessage': {"locationMessage": {"degreesLatitude": 41.893714904785156, "degreesLongitude": -87.63370513916016, "name": fake , 'jpegThumbnail': fs.readFileSync(`image/${thumbnail}`)}}}}
-		const fkontak = { key: {participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: `6283136505591-1614953337@g.us` } : {}) }, message: { 'contactMessage': { 'displayName': `${cr}`, 'vcard': `BEGIN:VCARD\nVERSION:3.0\nN:XL;${cr},;;;\nFN:${cr},\nitem1.TEL;waid=${sender.split('@')[0]}:${sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`, 'jpegThumbnail': fs.readFileSync(`image/${thumbnail}`), thumbnail: fs.readFileSync(`image/${thumbnail}`),sendEphemeral: true}}}
+        const fgif = {key: {participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: "6289643739077-1613049930@g.us" } : {})},message: {"videoMessage": { "title":`${creator}`, "h": `Hmm`,'seconds': '99999', 'gifPlayback': 'true', 'caption': `Aryaa-Bot ×፝֟͜×`, 'jpegThumbnail': fs.readFileSync(`image/thumbnail_1.jpg`)}}}
+		const fgclink = {key: {participant: "0@s.whatsapp.net","remoteJid": "0@s.whatsapp.net"},"message": {"groupInviteMessage": {"groupJid": "6288213840883-1616169743@g.us","inviteCode": "m","groupName": "P", "caption": `さ ${pushname} さ\nᴄᴍᴅ ᴇxᴇᴄ : ${command}`, 'jpegThumbnail': fs.readFileSync(`image/thumbnail_1.jpg`)}}}
+		const fgclink2 = {key: {participant: "0@s.whatsapp.net","remoteJid": "0@s.whatsapp.net"},"message": {"groupInviteMessage": {"groupJid": "6288213840883-1616169743@g.us","inviteCode": "m","groupName": "P", "caption": `${fake}`, 'jpegThumbnail': fs.readFileSync(`image/thumbnail_1.jpg`)}}}
+		const fvideo = {key: { fromMe: false,participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: "6289643739077-1613049930@g.us" } : {}) },message: { "videoMessage": { "title":`${creator}`, "h": `Hmm`,'seconds': '99999', 'caption': `${creator}`, 'jpegThumbnail': fs.readFileSync(`image/thumbnail_1.jpg`)}}}
+		const floc = {contextInfo: {"forwardingScore":999,"isForwarded":true,'stanzaId': msgId, 'participant':`${numbernye}@s.whatsapp.net`, 'remoteJid': '6283136505591-1614953337@g.us', 'quotedMessage': {"locationMessage": {"degreesLatitude": 41.893714904785156, "degreesLongitude": -87.63370513916016, "name": fake , 'jpegThumbnail': fs.readFileSync(`image/thumbnail_1.jpg`)}}}}
+		const fkontak = { key: {participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: `6283136505591-1614953337@g.us` } : {}) }, message: { 'contactMessage': { 'displayName': `${cr}`, 'vcard': `BEGIN:VCARD\nVERSION:3.0\nN:XL;${cr},;;;\nFN:${cr},\nitem1.TEL;waid=${sender.split('@')[0]}:${sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`, 'jpegThumbnail': fs.readFileSync(`image/thumbnail_1.jpg`), thumbnail: fs.readFileSync(`image/thumbnail_1.jpg`),sendEphemeral: true}}}
 		var fakeReplyList = ['ftroli', 'fdoc', 'fvn', 'fgif', 'fgclink', 'fvideo', 'floc', 'fkontak']
 		var fakeReply = fakeReplyList[Math.floor(Math.random() * fakeReplyList.length)];
 const fakeitem = (teks) => {
@@ -1399,7 +1399,7 @@ const fakeitem = (teks) => {
         	fromMe:false,
         participant:`0@s.whatsapp.net`, ...(from ? {
 remoteJid :"6289523258649-1604595598@g.us" }: {})
-                    },message:{"orderMessage":{"orderId":"174238614569481","thumbnail":fs.readFileSync(`image/${thumbnail}`),"itemCount":10,"status":"INQUIRY","surface":"CATALOG","message":`${botname}`,"token":"AR6xBKbXZn0Xwmu76Ksyd7rnxI+Rx87HfinVlW4lwXa6JA=="}}}})}
+                    },message:{"orderMessage":{"orderId":"174238614569481","thumbnail":fs.readFileSync(`image/thumbnail_1.jpg`),"itemCount":10,"status":"INQUIRY","surface":"CATALOG","message":`${botname}`,"token":"AR6xBKbXZn0Xwmu76Ksyd7rnxI+Rx87HfinVlW4lwXa6JA=="}}}})}
            
        const sendStickerFromUrl = async(to, url) => {
                 var names = Date.now() / 10000;
@@ -1481,7 +1481,7 @@ remoteJid :"6289523258649-1604595598@g.us" }: {})
             return alpha.sendMessage(from, await getBuffer(url), type, {caption: caption, quoted: mek, mimetype: mime, contextInfo: {"mentionedJid": men ? men : []}})
         }
         const textImg = (teks) => {
-            return alpha.sendMessage(from, teks, text, {quoted: mek, thumbnail: fs.readFileSync(`image/${thumbnail}`)})
+            return alpha.sendMessage(from, teks, text, {quoted: mek, thumbnail: fs.readFileSync(`image/thumbnail_1.jpg`)})
         }
         const sendStickerUrl = async(to, url) => {
 			console.log(color(time, 'magenta'), color(moment.tz('Asia/Jakarta').format('HH:mm:ss'), "gold"), color('Downloading sticker...'))
@@ -1645,7 +1645,7 @@ Ketik *nyerah* untuk menyerah dan mengakui kekalahan`
             if (isAfk(mek.key.remoteJid)) return
             addafk(mek.key.remoteJid)
             heheh = ms(Date.now() - waktu) 
-            alpha.sendMessage(mek.key.remoteJid,`@${owner} Sedang Offline!\n\n*Alasan :* ${alasan}\n*Sejak :* ${heheh.hours} Jam, ${heheh.minutes} Menit, ${heheh.seconds} Detik lalu\n\nSilahkan Hubungi Lagi Nanti`, MessageType.text,{contextInfo:{ mentionedJid: [`${owner}@s.whatsapp.net`],'stanzaId': "B826873620DD5947E683E3ABE663F263", 'participant': "0@s.whatsapp.net", 'remoteJid': 'status@broadcast', 'quotedMessage': {"imageMessage": {"caption": "*OFFLINE*", 'jpegThumbnail': fs.readFileSync(`image/${thumbnail}`)}}}})
+            alpha.sendMessage(mek.key.remoteJid,`@${owner} Sedang Offline!\n\n*Alasan :* ${alasan}\n*Sejak :* ${heheh.hours} Jam, ${heheh.minutes} Menit, ${heheh.seconds} Detik lalu\n\nSilahkan Hubungi Lagi Nanti`, MessageType.text,{contextInfo:{ mentionedJid: [`${owner}@s.whatsapp.net`],'stanzaId': "B826873620DD5947E683E3ABE663F263", 'participant': "0@s.whatsapp.net", 'remoteJid': 'status@broadcast', 'quotedMessage': {"imageMessage": {"caption": "*OFFLINE*", 'jpegThumbnail': fs.readFileSync(`image/thumbnail_1.jpg`)}}}})
             }
             }   
         if (mek.key.remoteJid.endsWith('@g.us') && offline) {
@@ -1658,7 +1658,7 @@ Ketik *nyerah* untuk menyerah dan mengakui kekalahan`
         if (isAfk(mek.key.remoteJid)) return
         addafk(mek.key.remoteJid)
         heheh = ms(Date.now() - waktu)
-        alpha.sendMessage(mek.key.remoteJid,`@${owner} Sedang Offline!\n\n *Alasan :* ${alasan}\n *Sejak :* ${heheh.hours} Jam, ${heheh.minutes} Menit, ${heheh.seconds} Detik lalu\n\nSilahkan Hubungi Lagi Nanti`, MessageType.text,{contextInfo:{ mentionedJid: [`${owner}@s.whatsapp.net`],'stanzaId': "B826873620DD5947E683E3ABE663F263", 'participant': "0@s.whatsapp.net", 'remoteJid': 'status@broadcast', 'quotedMessage': {"imageMessage": {"caption": "*OFFLINE*", 'jpegThumbnail': fs.readFileSync(`image/${thumbnail}`)}}}})
+        alpha.sendMessage(mek.key.remoteJid,`@${owner} Sedang Offline!\n\n *Alasan :* ${alasan}\n *Sejak :* ${heheh.hours} Jam, ${heheh.minutes} Menit, ${heheh.seconds} Detik lalu\n\nSilahkan Hubungi Lagi Nanti`, MessageType.text,{contextInfo:{ mentionedJid: [`${owner}@s.whatsapp.net`],'stanzaId': "B826873620DD5947E683E3ABE663F263", 'participant': "0@s.whatsapp.net", 'remoteJid': 'status@broadcast', 'quotedMessage': {"imageMessage": {"caption": "*OFFLINE*", 'jpegThumbnail': fs.readFileSync(`image/thumbnail_1.jpg`)}}}})
           }
         }
             }
@@ -1711,7 +1711,7 @@ if (asd.presences) {
                _off.splice(off.getAfkPosition(key, _off), 1)
             fs.writeFileSync('./src/afk.json', JSON.stringify(_off))
          ckck = `\n*@${key.split('@')[0]}* terdeteksi ${asd.presences[key].lastKnownPresence == 'composing' ? 'sedang mengetik...' : 'sedang merekam...'}\nSekarang dia sudah tidak AFK\n`
-     alpha.sendMessage(asd.jid, ckck.trim(), text, {thumbnail: fs.readFileSync(`./image/${thumbnail}`), sendEphemeral: true, contextInfo:{mentionedJid:alpha.parseMention(ckck)}})
+     alpha.sendMessage(asd.jid, ckck.trim(), text, {thumbnail: fs.readFileSync(`./image/thumbnail_1.jpg`), sendEphemeral: true, contextInfo:{mentionedJid:alpha.parseMention(ckck)}})
                 }}}}})
 
         if (isGroup && !mek.key.fromMe) {
@@ -2072,8 +2072,8 @@ for (let i of hemms){
 teksx1 += `📍 Nama : @${i.jid.split('@')[0]}${enter}`
 teksx1 += `📍 Waktu : ${toTime(i.t, true)}${enter}📍 Tanggal : ${toBulan(i.t, true)}${enter}•${enter}`
 }
-alpha.sendMessage(from, teksx, text, { sendEphemeral: true, quoted: mek, thumbnail: fs.readFileSync(`./image/${thumbnail}`), contextInfo: { forwardingScore:999, isForwarded: true, mentionedJid: readdin }})
-alpha.sendMessage(from, teksx1, text, { sendEphemeral: true, quoted: mek, thumbnail: fs.readFileSync(`./image/${thumbnail}`), contextInfo: { forwardingScore:999, isForwarded: true, mentionedJid: readon }})
+alpha.sendMessage(from, teksx, text, { sendEphemeral: true, quoted: mek, thumbnail: fs.readFileSync(`./image/thumbnail_1.jpg`), contextInfo: { forwardingScore:999, isForwarded: true, mentionedJid: readdin }})
+alpha.sendMessage(from, teksx1, text, { sendEphemeral: true, quoted: mek, thumbnail: fs.readFileSync(`./image/thumbnail_1.jpg`), contextInfo: { forwardingScore:999, isForwarded: true, mentionedJid: readon }})
 } catch(e) {
 reply('reply pesan botnya ')
 reply(e)
@@ -2243,8 +2243,8 @@ break
 				}
 				hitall = `${hit_total.value}`
 koko = `${targetpc}@s.whatsapp.net`
-let content = fs.readFileSync(`image/${thumbnail}`)
-const media = await alpha.prepareMessage(from, content, MessageType.image, { thumbnail:fs.readFileSync(`image/${thumbnail}`)})
+let content = fs.readFileSync(`image/thumbnail_1.jpg`)
+const media = await alpha.prepareMessage(from, content, MessageType.image, { thumbnail:fs.readFileSync(`image/thumbnail_1.jpg`)})
 let bacotlu = media.message["ephemeralMessage"] ? media.message.ephemeralMessage : media
 let p1 = await alpha.getStatus(sender)
 anunya = process.uptime()
@@ -2292,7 +2292,7 @@ if(typemenu == 'image'){
 sendButImage(from,  ini_anu + '\n\n' + allmenu(kyun, os, prefix, wita, wit, ucapannya2, timuu, status, wa_version, mcc, mnc, os_version, device_manufacturer, device_model, alfa , alfa1, thisDay, ini_tanggal, totalchat, hit_today, ini_gcchat, latensii) , `© ${ownername}`,pp_bot, [{"buttonId": `owner`,"buttonText": {"displayText": "👨‍💻 Owner"},"type": "RESPONSE"}], {"contextInfo": {"mentionedJid": [sender, koko, ini_mark]}, thumbnail: pp_bot, quoted: mek})
 }
 if(typemenu == 'location'){ 
-let content1 = fs.readFileSync(`image/${thumbnail}`)
+let content1 = fs.readFileSync(`image/thumbnail_1.jpg`)
 const media1 = await alpha.prepareMessage(from, content1, MessageType.location, {thumbnail: content1})
 let bacotlu1 = media1.message["ephemeralMessage"] ? media1.message.ephemeralMessage : media1
 
@@ -2540,8 +2540,8 @@ break
 				}
 				hitall = `${hit_total.value}`
 koko = `${targetpc}@s.whatsapp.net`
-let content = fs.readFileSync(`image/${thumbnail}`)
-const media = await alpha.prepareMessage(from, content, MessageType.image, { thumbnail:fs.readFileSync(`image/${thumbnail}`)})
+let content = fs.readFileSync(`image/thumbnail_1.jpg`)
+const media = await alpha.prepareMessage(from, content, MessageType.image, { thumbnail:fs.readFileSync(`image/thumbnail_1.jpg`)})
 let bacotlu = media.message["ephemeralMessage"] ? media.message.ephemeralMessage : media
 let p1 = await alpha.getStatus(sender)
 anunya = process.uptime()
@@ -2697,7 +2697,7 @@ alpha.sendMessage(from,  buttonMessagee, MessageType.buttonsMessage,{
 				teskny +=`\`\`\`Merk Hp : ${device_manufacturer}\`\`\`\n`
 				teskny +=`\`\`\`Versi Hp : ${device_model}\`\`\`\n`
 				teskny +=`\`\`\`Runtime : ${(kyun(os.uptime()))}\`\`\``
-				alpha.sendMessage(from, teskny, text, {quoted: { key : { participant : `0@s.whatsapp.net`, "remoteJid":  '6283136505591-1614953337@g.us', "fromMe": false, "id": "B391837A58338BA8186C47E51FFDFD4A" }, "message": { "documentMessage": { "jpegThumbnail": fs.readFileSync(`image/${thumbnail}`), "mimetype": "application/octet-stream","title": `${fake}`, "fileLength": "36", "pageCount": 0, "fileName": `${fake}`}}, "messageTimestamp": "1614069378", "status": "PENDING"},contextInfo:{"forwardingScore":999,"isForwarded":true},sendEphemeral: true})
+				alpha.sendMessage(from, teskny, text, {quoted: { key : { participant : `0@s.whatsapp.net`, "remoteJid":  '6283136505591-1614953337@g.us', "fromMe": false, "id": "B391837A58338BA8186C47E51FFDFD4A" }, "message": { "documentMessage": { "jpegThumbnail": fs.readFileSync(`image/thumbnail_1.jpg`), "mimetype": "application/octet-stream","title": `${fake}`, "fileLength": "36", "pageCount": 0, "fileName": `${fake}`}}, "messageTimestamp": "1614069378", "status": "PENDING"},contextInfo:{"forwardingScore":999,"isForwarded":true},sendEphemeral: true})
 break
 case 'getbio':
 				if (!isGroup) return reply(lang.onlygc())
@@ -2910,7 +2910,7 @@ await limitAdd(sender, limit)
                var kntl = body.slice(8)
 			   var nama = kntl.split("|")[0];
 			   var impostor = kntl.split("|")[1];
-			   var bro = fs.readFileSync(`image/${thumbnail}`)
+			   var bro = fs.readFileSync(`image/thumbnail_1.jpg`)
                alpha.sendMessage(from, { name: `${nama}`,address: `${impostor}`,jpegThumbnail: bro }, MessageType.location)                
 		    await limitAdd(sender, limit)
 					break   
@@ -3601,7 +3601,7 @@ break
 		        	if ((isMedia && !mek.message.videoMessage || isQuotedImage || isQuotedSticker) && args.length == 0) {
 		            boij = isQuotedImage || isQuotedSticker ? JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo : mek
 					delb = await alpha.downloadMediaMessage(boij)
-					fs.writeFileSync(`./image/${thumbnail}`, delb)
+					fs.writeFileSync(`./image/thumbnail_1.jpg`, delb)
 					reply('Sukses')
 		        	} else {
 		            fakeitem(`Kirim gambar dengan caption ${prefix}setfakeimg`)
@@ -3612,7 +3612,7 @@ break
 			        if ((isMedia && !mek.message.videoMessage || isQuotedImage || isQuotedSticker) && args.length == 0) {
 		          	boij = isQuotedImage || isQuotedSticker ? JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo : mek
 					delb = await alpha.downloadMediaMessage(boij)
-					fs.writeFileSync(`./image/${thumbnail}`, delb)
+					fs.writeFileSync(`./image/thumbnail_1.jpg`, delb)
 					reply('Sukses')
 		        	} else {
 		            reply(`Kirim gambar dengan caption ${prefix}sethumb`)
@@ -3784,8 +3784,8 @@ reply(lang.wait())
 hx.twitter(lin).then(async (res) => {
 console.log('[ TWITTER ] downloader')
 Anu = res.SD
-fto = fs.readFileSync(`./image/${thumbnail}`)
-alpha.sendMessage(from, fto, image, {quoted:mek, caption:`*TWITTER MP3*${enter}${enter}•> Hd : ${res.HD}${enter}•> Sd : ${res.SD}${enter}•> Audio : ${res.audio}${enter}${enter}_Please wait, the media file is being sent it may take a few minutes_`, thumbnail:fs.readFileSync(`./image/${thumbnail}`), contextInfo:{forwardingScore: 989, isForwarded: true}})
+fto = fs.readFileSync(`./image/thumbnail_1.jpg`)
+alpha.sendMessage(from, fto, image, {quoted:mek, caption:`*TWITTER MP3*${enter}${enter}•> Hd : ${res.HD}${enter}•> Sd : ${res.SD}${enter}•> Audio : ${res.audio}${enter}${enter}_Please wait, the media file is being sent it may take a few minutes_`, thumbnail:fs.readFileSync(`./image/thumbnail_1.jpg`), contextInfo:{forwardingScore: 989, isForwarded: true}})
 khs = await getBuffer(Anu)
 alpha.sendMessage(from, khs, audio, {mimetype:'audio/mpeg', filename:'twitter.mp3', quoted:mek, ptt:true})
 })
@@ -4161,7 +4161,7 @@ await limitAdd(sender, limit)
 					reply(lang.wait())
 					anu = await fetchJson(`https://waifu.pics/api/sfw/awoo`)
 					buffer = await getBuffer(anu.url)
-					anu  = {contextInfo: {"forwardingScore":999,"isForwarded":true,'stanzaId': msgId, 'participant':`${numbernye}@s.whatsapp.net`, 'remoteJid': '6283136505591-1614953337@g.us', 'quotedMessage': {"locationMessage": {"degreesLatitude": 41.893714904785156, "degreesLongitude": -87.63370513916016, "name": fake , 'jpegThumbnail': fs.readFileSync(`image/${thumbnail}`)}}}}
+					anu  = {contextInfo: {"forwardingScore":999,"isForwarded":true,'stanzaId': msgId, 'participant':`${numbernye}@s.whatsapp.net`, 'remoteJid': '6283136505591-1614953337@g.us', 'quotedMessage': {"locationMessage": {"degreesLatitude": 41.893714904785156, "degreesLongitude": -87.63370513916016, "name": fake , 'jpegThumbnail': fs.readFileSync(`image/thumbnail_1.jpg`)}}}}
                     alpha.sendMessage(from, buffer, image, anu)
 					await limitAdd(sender, limit)
 					break   
@@ -4170,7 +4170,7 @@ await limitAdd(sender, limit)
 					reply(lang.wait())
 					anu = await fetchJson(`https://nekos.life/api/v2/img/blowjob`)
 					buffer = await getBuffer(anu.url)
-					anu  = {contextInfo: {"forwardingScore":999,"isForwarded":true,'stanzaId': msgId, 'participant':`${numbernye}@s.whatsapp.net`, 'remoteJid': '6283136505591-1614953337@g.us', 'quotedMessage': {"locationMessage": {"degreesLatitude": 41.893714904785156, "degreesLongitude": -87.63370513916016, "name": fake , 'jpegThumbnail': fs.readFileSync(`image/${thumbnail}`)}}}}
+					anu  = {contextInfo: {"forwardingScore":999,"isForwarded":true,'stanzaId': msgId, 'participant':`${numbernye}@s.whatsapp.net`, 'remoteJid': '6283136505591-1614953337@g.us', 'quotedMessage': {"locationMessage": {"degreesLatitude": 41.893714904785156, "degreesLongitude": -87.63370513916016, "name": fake , 'jpegThumbnail': fs.readFileSync(`image/thumbnail_1.jpg`)}}}}
                     alpha.sendMessage(from, buffer, image, anu)
 					await limitAdd(sender, limit)
 					break   
@@ -4179,7 +4179,7 @@ await limitAdd(sender, limit)
 					reply(lang.wait())
 					anu = await fetchJson(`https://waifu.pics/api/sfw/megumin`)
 					buffer = await getBuffer(anu.url)
-					anu  = {contextInfo: {"forwardingScore":999,"isForwarded":true,'stanzaId': msgId, 'participant':`${numbernye}@s.whatsapp.net`, 'remoteJid': '6283136505591-1614953337@g.us', 'quotedMessage': {"locationMessage": {"degreesLatitude": 41.893714904785156, "degreesLongitude": -87.63370513916016, "name": fake , 'jpegThumbnail': fs.readFileSync(`image/${thumbnail}`)}}}}
+					anu  = {contextInfo: {"forwardingScore":999,"isForwarded":true,'stanzaId': msgId, 'participant':`${numbernye}@s.whatsapp.net`, 'remoteJid': '6283136505591-1614953337@g.us', 'quotedMessage': {"locationMessage": {"degreesLatitude": 41.893714904785156, "degreesLongitude": -87.63370513916016, "name": fake , 'jpegThumbnail': fs.readFileSync(`image/thumbnail_1.jpg`)}}}}
                     alpha.sendMessage(from, buffer, image, anu)
 					await limitAdd(sender, limit)
 					break   
@@ -4188,7 +4188,7 @@ await limitAdd(sender, limit)
 					reply(lang.wait())
 					anu = await fetchJson(`https://waifu.pics/api/nsfw/trap`)
 					buffer = await getBuffer(anu.url)
-					anu  = {contextInfo: {"forwardingScore":999,"isForwarded":true,'stanzaId': msgId, 'participant':`${numbernye}@s.whatsapp.net`, 'remoteJid': '6283136505591-1614953337@g.us', 'quotedMessage': {"locationMessage": {"degreesLatitude": 41.893714904785156, "degreesLongitude": -87.63370513916016, "name": fake , 'jpegThumbnail': fs.readFileSync(`image/${thumbnail}`)}}}}
+					anu  = {contextInfo: {"forwardingScore":999,"isForwarded":true,'stanzaId': msgId, 'participant':`${numbernye}@s.whatsapp.net`, 'remoteJid': '6283136505591-1614953337@g.us', 'quotedMessage': {"locationMessage": {"degreesLatitude": 41.893714904785156, "degreesLongitude": -87.63370513916016, "name": fake , 'jpegThumbnail': fs.readFileSync(`image/thumbnail_1.jpg`)}}}}
                     alpha.sendMessage(from, buffer, image, anu)
 					await limitAdd(sender, limit)
 					break   
@@ -4475,7 +4475,7 @@ if (!isGroup) return reply(lang.onlygc())
 					}
 					seeer = `Nama : *${pushname}`
 					thumbb = await getBuffer(pic)
-					anuu  = {contextInfo:{"forwardingScore":999,"isForwarded":true,'stanzaId': "B826873620DD5947E683E3ABE663F263", 'participant': `${numbernye}@s.whatsapp.net`, 'remoteJid': '6289523258649-1604595598@g.us', 'quotedMessage': {"imageMessage": {"caption": `「 Bot by zeeone 」`, 'jpegThumbnail': fs.readFileSync(`image/${thumbnail}`)}}}}
+					anuu  = {contextInfo:{"forwardingScore":999,"isForwarded":true,'stanzaId': "B826873620DD5947E683E3ABE663F263", 'participant': `${numbernye}@s.whatsapp.net`, 'remoteJid': '6289523258649-1604595598@g.us', 'quotedMessage': {"imageMessage": {"caption": `「 Bot by zeeone 」`, 'jpegThumbnail': fs.readFileSync(`image/thumbnail_1.jpg`)}}}}
                     alpha.sendMessage(from, thumbb ,image, anuu)
 				}
 				await limitAdd(sender, limit)
@@ -4816,7 +4816,7 @@ case 'tahta':
                     if (args.length < 1) return reply(lang.noteks(prefix, command))
                     ttp = args.join(' ')
                     anu1 = await getBuffer(`https://api.xteam.xyz/ttp?file&text=${ttp}`)
-                    alpha.sendMessage(from, anu1, image, {quoted: mek, caption : '.s'})
+                    alpha.sendMessage(from, anu1, image, {quoted: mek, caption : '.stikerin'})
 					.catch(e =>{
 					reply('Sepertinya server xteam.xyz sedang eror / perbaikan')})
 					 await limitAdd(sender, limit)
