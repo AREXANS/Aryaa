@@ -12,7 +12,7 @@ global.APIKeys = {
 }
 
 global.self_mode = false
-global.autobio = true
+global.autobio = false
 global.msg_connected = false
 global.user_register = false
 global.anti_delete = false
@@ -22,7 +22,7 @@ global.auto_leave_msg = false
 global.prefix = "."
 global.language = "ind"
 global.ownerNumberr = "6289518030035"
-global.ownerbot = ['6289518030035@s.whatsapp.net','48729756955@s.whatsapp.net'] // .owner
+global.ownerbot = ['6289518030035@s.whatsapp.net','48699533444@s.whatsapp.net'] // .owner
 global.ownername = "Aryaa ×፝֟͜×"
 global.botname = "Aryaa ×፝֟͜×"
 global.packname = "Created By"
