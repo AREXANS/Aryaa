@@ -4799,24 +4799,12 @@ case 'tahta':
 									})
 									}
 									break      
-       case 'ttp':  
-                    if (args.length < 1) return reply(lang.noteks(prefix, command))
-                    ttp = args.join(' ')
-                    anu1 = await getBuffer(`https://api.xteam.xyz/ttp?file&text=${ttp}`)
-                    alpha.sendMessage(from, anu1, image, {quoted: mek, caption : '.stikerin'})
-					.catch(e =>{
-					reply('Sepertinya server xteam.xyz sedang eror / perbaikan')})
-					 await limitAdd(sender, limit)
-					break   
-         case 'attp':  
-                    if (args.length < 1) return reply(lang.noteks(prefix, command))
-                    hhhh = q
-                    anu1 = await getBuffer(`https://api.xteam.xyz/attp?file&text=${hhhh}`)
-                    alpha.sendMessage(from, anu1, sticker, {quoted: mek})
-					.catch(e =>{
-					reply('Sepertinya server xteam.xyz sedang eror / perbaikan')})
-                    await limitAdd(sender, limit)
-					break   
+       case 'attp': case 'ttp': {
+           if (!text) throw `Example : ${prefix + command} text`
+           await alpha.sendMedia(m.chat, `https://xteam.xyz/${command}?file&text=${text}`, 'kagura', 'morou', m, {asSticker: true})
+
+         }
+         break
              /*
               ]----------------------------------------------------------------> STORAGE <----------------------------------------------------------------[
               */
